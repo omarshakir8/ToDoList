@@ -18,7 +18,7 @@ function handleAddTodos(newTodo) {
 
   return (
     <>
-      <TodoInput />
+      <TodoInput handleAddTodos={handleAddTodos} />
       <TodoList todos={todos} />
       
     </>
