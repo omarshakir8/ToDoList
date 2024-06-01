@@ -11,6 +11,11 @@ const [todos, setTodos] = useState(['Go to the Gym',
 'Sleep Early'
 ])
 
+function handleAddTodos(newTodo) {
+  const newTodoList = [...todos, newTodo]
+  setTodos(newTodoList)
+}
+
   return (
     <>
       <TodoInput />
