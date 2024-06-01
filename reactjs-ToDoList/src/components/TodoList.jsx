@@ -10,10 +10,10 @@ export default function TodoList() {
 
 
   return (
-    <ul>
+    <ul className='main'>
         {todos.map((todo, todoIndex) => {
             return (
-                <li key={todo}>{todo}</li>
+                <li className='todoItem' key={todo}>{todo}</li>
             )
         })}
     </ul>
